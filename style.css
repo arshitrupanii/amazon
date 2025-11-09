@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Arial;
+}
+
+/* navbar */
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-left {
+  margin-left: 13px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* navbar logo */
+.nav-left-logo {
+  width: 110px;
+  height: 35px;
+  background-image: url("asset/Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* navbar address section */
+.nav-left-add {
+  width: 185px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+}
+
+.nav-left-add-text-address {
+  color: #cccccc;
+  font-size: 12px;
+}
+
+.nav-left-add-text-btn {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+/* navbar middle */
+.nav-middle {
+  width: 720px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-middle-search {
+  width: 700px;
+  height: 40px;
+  display: flex;
+}
+
+.nav-middle-search-select {
+  width: 50px;
+  height: 100%;
+  color: #555555;
+  background-color: #e6e6e6;
+  text-align: center;
+  border: #131921;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.nav-middle-search-input {
+  width: 600px;
+  height: 100%;
+  padding: 10px;
+  color: black;
+  border: #131921;
+  outline: none;
+  font-size: 15px;
+}
+
+.nav-middle-search-btn {
+  width: 45px;
+  height: 100%;
+  border: #131921;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #febd69;
+}
+
+/* navbar right */
+
+.nav-right {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-right-lang {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+}
+
+.nav-right-lang {
+  background: url("asset/indian_flag.png") no-repeat 8px center;
+  background-size: 25px 25px;
+  padding-left: 35px; /* to make space for the flag */
+  height: 30px;
+  color: white;
+}
+
+.nav-right-signin {
+  padding: 5px;
+}
+
+.nav-right-signin p {
+  font-size: 12px;
+  padding-left: 4px;
+}
+
+.nav-right-signin-select {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+}
+
+.nav-right-return {
+  padding: 5px;
+}
+
+.nav-right-return-p1 {
+  font-size: 12px;
+}
+
+.nav-right-return-p2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.nav-right-cart{
+    display: flex;
+}
+
+.nav-right-cart-icon{
+    width: 38px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* utility */
+.border {
+  border: 1.5px solid transparent;
+  border-radius: 3px;
+}
+
+.border:hover {
+  border: 1.5px solid white;
+  border-radius: 3px;
+  cursor: pointer;
+}
