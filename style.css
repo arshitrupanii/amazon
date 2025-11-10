@@ -13,14 +13,14 @@
   background-color: #131921;
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .nav-left {
   margin-left: 13px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+  min-width: 300px;
 }
 
 /* navbar logo */
@@ -35,7 +35,6 @@
 
 /* navbar address section */
 .nav-left-add {
-  width: 185px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -55,16 +54,17 @@
 
 /* navbar middle */
 .nav-middle {
-  width: 720px;
+  flex: 1;
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .nav-middle-search {
-  width: 700px;
   height: 40px;
+  width: 100%;
   display: flex;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .nav-middle-search-input {
-  width: 600px;
+  width: 100%;
   height: 100%;
   padding: 10px;
   color: black;
@@ -101,11 +101,12 @@
 /* navbar right */
 
 .nav-right {
-  width: 100%;
+  min-width: 390px;
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
+  flex: 0 0 auto;
 }
 
 .nav-right-lang {
@@ -150,23 +151,39 @@
   font-weight: bold;
 }
 
-.nav-right-cart{
-    display: flex;
+.nav-right-cart {
+  display: flex;
+  width: 70px;
 }
 
-.nav-right-cart-icon{
-    width: 38px;
-    height: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nav-right-cart-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-image: url("asset/cart_icon.png");
+  background-size: contain;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
+.nav-right-cart-count {
+  color: #f08804;
+  position: absolute;
+  right: 52px;
+  top: 8px;
+  font-size: 18px;
+  font-weight: bolder;
+}
 
-
-
-
-
+.nav-right-cart-text {
+  position: absolute;
+  display: flex;
+  align-items: end;
+  font-weight: bold;
+  top: 28px;
+  right: 14px;
+}
 
 /* utility */
 .border {
@@ -178,4 +195,22 @@
   border: 1.5px solid white;
   border-radius: 3px;
   cursor: pointer;
+}
+
+/* media query */
+
+/* navbar */
+@media (max-width:1000px){
+  .nav-left{ flex:0 0 auto; }
+  .nav-middle{ flex:1 1 auto; }   /* no doubling; keep it fluid */
+  .nav-left-logo{ width:90px; }
+  .nav-left-add{ max-width:145px; }
+  .nav-left-add-text-address{ font-size:9px; }
+  .nav-left-add-text-btn{ font-size:12px; }
+
+  /* allow right block to compress instead of forcing large min width */
+  .nav-right{ min-width:0; gap:6px; }
+  .nav-right-cart{ width:45px; }
+  .nav-right-cart-text{ display:none; }
+  .nav-right-cart-count{ right:15px; }
 }
