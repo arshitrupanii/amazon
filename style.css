@@ -7,7 +7,7 @@
 }
 
 /* navbar */
-.navbar {
+.navbar-1 {
   width: 100%;
   height: 60px;
   background-color: #131921;
@@ -172,6 +172,32 @@
   right: 15px;
 }
 
+/* navbar 2 */
+.navbar-2 {
+  height: 40px;
+  width: 100%;
+  background-color: #232f3e;
+  display: flex;
+  padding: 0px 25px;
+}
+
+.navbar-2 ul {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav2-item {
+  list-style-type: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 /* media query */
 
 /* navbar */
@@ -210,7 +236,7 @@
   }
 
   .nav-right-cart-count {
-    right: 16px;
+    right: 24px;
   }
 }
 
