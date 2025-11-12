@@ -186,6 +186,7 @@
   align-items: center;
   overflow-x: auto;
   white-space: nowrap;
+  scrollbar-width: none;
 }
 
 .nav2-item {
@@ -237,6 +238,10 @@
 
   .nav-right-cart-count {
     right: 24px;
+  }
+
+  .navbar-2{
+    padding: 0px;
   }
 }
 
