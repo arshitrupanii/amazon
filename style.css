@@ -199,6 +199,44 @@
   gap: 5px;
 }
 
+/* slide show hero section */
+.slide-show-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.mySlides img {
+  mask-image: linear-gradient(to top, transparent, rgb(0, 0, 0));
+}
+
+.prev, .next {
+  position: absolute;
+  background-color: transparent;
+  color: #232f3e;
+  text-decoration: none;
+  font-size: larger;
+  width: 100px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prev{
+  top: 5%;
+  left: 2%;
+}
+
+.next{
+  top: 5%;
+  right: 2%;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgb(0, 0, 0, 0.1);
+}
+
 /* media query */
 
 /* navbar */
@@ -240,7 +278,7 @@
     right: 24px;
   }
 
-  .navbar-2{
+  .navbar-2 {
     padding: 0px;
   }
 }
